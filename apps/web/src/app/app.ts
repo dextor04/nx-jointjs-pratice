@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
-
+import { JointDemo } from './components/joint-demo/joint-demo';
 @Component({
-  imports: [NxWelcome, RouterModule],
+  imports: [RouterModule, JointDemo],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.css',
