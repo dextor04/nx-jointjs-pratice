@@ -1,4 +1,16 @@
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
-<div class="border-2 border-amber-500">dextor04</div>
+<!-- joint-graph.component.html -->
+<div
+  #paperContainer
+  style="width: 220px; height: 500px; margin-bottom: 20px"
+></div>
 
-<div id="paper"></div>
+<label for="levelInput">Set Tank Level (%):</label>
+<input
+  id="levelInput"
+  type="number"
+  [(ngModel)]="inputLevel"
+  min="0"
+  max="100"
+  style="width: 80px; margin-left: 10px"
+/>
+<button (click)="applyLevel()" style="margin-left: 10px">Apply</button>
